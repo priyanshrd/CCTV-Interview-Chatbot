@@ -80,70 +80,63 @@ Set your OpenAI API key in your environment:
     ```
     Access the chatbot: Open your browser and go to http://localhost:5000 to interact with the chatbot.
 
-💡 Usage
+## 💡 Usage
 The chatbot is designed to take text input from users, process it using NLP, and generate a meaningful response. Here are examples of possible interactions:
 
 Example 1 - HR Interview: Request:
 
-json
-Copy code
+```json
 {
   "message": "Can you conduct an interview for a software engineer?"
 }
-Response:
 
-json
-Copy code
 {
   "response": "Sure! Let’s start with the first question: What are your greatest strengths as a software engineer?"
 }
+```
 Example 2 - Financial Transaction: Request:
 
-json
-Copy code
+```json
+
 {
   "message": "Can you help me process a refund?"
 }
-Response:
 
-json
-Copy code
 {
   "response": "I’ve initiated a refund request for you. It should be processed within 3-5 business days."
 }
-🛠️ Development Setup
-Frontend
+```
+## 🛠️ Development Setup
+- **Frontend**:
 The frontend is built with React.js to provide an intuitive interface where users can interact with the chatbot via text. For installation and development, you’ll need:
 
-bash
-Copy code
+```bash
 npm install
 npm start
+```
 You can also integrate WebSockets or Server-Sent Events (SSE) for real-time updates on long-running transactions or interviews.
 
-Backend
+- **Backend**:
 The backend is built using Flask or Django, with RESTful APIs to handle client requests and interface with the NLP models. To run the backend:
-
-bash
-Copy code
+```bash
 python src/chatbot.py
-🧑‍💻 Future Enhancements
-Voice Integration: Add support for voice-based interviews using speech-to-text and text-to-speech APIs.
-Real-time Transaction Updates: Integrate real-time updates for financial transactions using WebSockets.
-User Authentication: Implement secure authentication mechanisms, such as OAuth2, for user management and data privacy.
-Advanced Analytics: Provide detailed analytics to HR teams based on interview responses, candidate performance, and sentiment analysis.
-🤝 Contributions
+```
+## 🧑‍💻 Future Enhancements
+- Voice Integration: Add support for voice-based interviews using speech-to-text and text-to-speech APIs.
+- Real-time Transaction Updates: Integrate real-time updates for financial transactions using WebSockets.
+- User Authentication: Implement secure authentication mechanisms, such as OAuth2, for user management and data privacy.
+- Advanced Analytics: Provide detailed analytics to HR teams based on interview responses, candidate performance, and sentiment analysis.
+## 🤝 Contributions
 We welcome contributions! If you’d like to contribute, feel free to submit a pull request or open an issue for bugs or feature requests.
 
-How to Contribute
-Fork the repository
-Create a new feature branch: git checkout -b feature/my-new-feature
-Commit your changes: git commit -m 'Add some feature'
-Push the branch: git push origin feature/my-new-feature
-Submit a pull request
-📄 License
-This project is licensed under the MIT License.
-
-👏 Acknowledgments
+ **How to Contribute**:
+  1. Fork the repository
+  2. Create a new feature branch: git checkout -b feature/my-new-feature
+  3. Commit your changes: git commit -m 'Add some feature'
+  4. Push the branch: git push origin feature/my-new-feature
+  5. Submit a pull request
+## 📄 License
+-N.A.-
+## 👏 Acknowledgments
 This project was inspired by the need for scalable, AI-powered HR and financial solutions in fast-paced organizations. Special thanks to the team members who contributed to its development. 
 
